@@ -8,6 +8,7 @@ import { Callout } from "@/components/callout"
 import { Card } from "@/components/card"
 import { CodeBlockWrapper } from "@/components/code-block-wrapper"
 import { ComponentExample } from "@/components/component-example"
+import { ComponentHistory } from "@/components/component-history"
 import { ComponentSource } from "@/components/component-source"
 import { CopyButton, CopyNpmCommandButton } from "@/components/copy-button"
 import { examples } from "@/components/examples"
@@ -223,6 +224,7 @@ const components = {
   Card,
   ComponentExample,
   ComponentSource,
+  ComponentHistory,
   CodeBlockWrapper: ({ ...props }) => (
     <CodeBlockWrapper
       className="rounded-md border border-slate-100"

@@ -12,6 +12,7 @@ import remarkGfm from "remark-gfm"
 import { getHighlighter, loadTheme } from "shiki"
 import { visit } from "unist-util-visit"
 
+import { rehypeChangelog } from "./lib/rehype-changelog"
 import { rehypeComponent } from "./lib/rehype-component"
 import { rehypeNpmCommand } from "./lib/rehype-npm-command"
 
@@ -77,6 +78,7 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
       rehypeComponent,
+      () => (tree) => rehypeChangelog(tree),
       () => (tree) => {
         visit(tree, (node) => {
           if (node?.type === "element" && node?.tagName === "pre") {

@@ -27,3 +27,10 @@ export interface NpmCommands {
   __yarnCommand__?: string
   __pnpmCommand__?: string
 }
+
+export interface GitCommit {
+  id: string
+  timestamp: number
+  message: string
+  url: string
+}
