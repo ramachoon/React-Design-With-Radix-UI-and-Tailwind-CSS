@@ -46,7 +46,7 @@ export const components = [
   {
     component: "calendar",
     name: "Calendar",
-    dependencies: ["react-day-picker", "date-fns"],
+    dependencies: ["react-day-picker"],
     files: ["components/ui/calendar.tsx"],
   },
   {

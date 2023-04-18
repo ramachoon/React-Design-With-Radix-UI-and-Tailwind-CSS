@@ -185,9 +185,10 @@ async function main() {
 
         // Install dependencies.
         if (component.dependencies?.length) {
+          const dependencies = component.dependencies.join(" ")
           await execa(packageManager, [
             packageManager === "npm" ? "install" : "add",
-            ...component.dependencies,
+            dependencies,
           ])
         }
         componentSpinner.succeed(component.name)
