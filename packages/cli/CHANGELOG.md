@@ -1,5 +1,11 @@
 # @shadcn/ui
 
+## 0.4.2
+
+### Patch Changes
+
+- [#1707](https://github.com/shadcn-ui/ui/pull/1707) [`46f247c`](https://github.com/shadcn-ui/ui/commit/46f247c47f87f771d98cc77bddb5697dac200de4) Thanks [@caiquecastro](https://github.com/caiquecastro)! - fix code style
+
 ## 0.4.1
 
 ### Patch Changes
