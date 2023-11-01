@@ -29,7 +29,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "GitHub",
-      href: "https://github.com/shadcn/ui",
+      href: "https://github.com/ramachoon/React-Design-With-Radix-UI-and-Tailwind-CSS",
       external: true,
     },
     {
